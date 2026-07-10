@@ -51,19 +51,7 @@ C143,133 138,129 138,124 Z
 " />
 
     <!-- Three dots in gold bubble (dark green) -->
-    <circle
-        android:fillColor="#006B3C"
-        android:cx="152"
-        android:cy="115"
-        android:r="4" />
-    <circle
-        android:fillColor="#006B3C"
-        android:cx="163"
-        android:cy="115"
-        android:r="4" />
-    <circle
-        android:fillColor="#006B3C"
-        android:cx="174"
-        android:cy="115"
-        android:r="4" />
+    <path android:fillColor="#006B3C" android:pathData="M152,111 a4,4 0 1,0 0.001,0 Z" />
+    <path android:fillColor="#006B3C" android:pathData="M163,111 a4,4 0 1,0 0.001,0 Z" />
+    <path android:fillColor="#006B3C" android:pathData="M174,111 a4,4 0 1,0 0.001,0 Z" />
 </vector>

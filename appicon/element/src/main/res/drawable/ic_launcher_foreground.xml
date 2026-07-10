@@ -55,19 +55,7 @@ C74,73 72,71 72,68 Z
 " />
 
     <!-- Three dots inside chat bubble (activity indicator) -->
-    <circle
-        android:fillColor="#006B3C"
-        android:cx="79"
-        android:cy="63"
-        android:r="2" />
-    <circle
-        android:fillColor="#006B3C"
-        android:cx="83.5"
-        android:cy="63"
-        android:r="2" />
-    <circle
-        android:fillColor="#006B3C"
-        android:cx="88"
-        android:cy="63"
-        android:r="2" />
+    <path android:fillColor="#006B3C" android:pathData="M79,61 a2,2 0 1,0 0.001,0 Z" />
+    <path android:fillColor="#006B3C" android:pathData="M83.5,61 a2,2 0 1,0 0.001,0 Z" />
+    <path android:fillColor="#006B3C" android:pathData="M88,61 a2,2 0 1,0 0.001,0 Z" />
 </vector>

@@ -52,20 +52,14 @@ L90,81
 C87,81 85,79 85,76 Z
 " />
 
-    <!-- Dots inside chat bubble -->
-    <circle
+    <!-- Dots inside chat bubble (circles via path arcs) -->
+    <path
         android:fillColor="#006B3C"
-        android:cx="93"
-        android:cy="69"
-        android:r="2.5" />
-    <circle
+        android:pathData="M93,66.5 a2.5,2.5 0 1,0 0.001,0 Z" />
+    <path
         android:fillColor="#006B3C"
-        android:cx="100"
-        android:cy="69"
-        android:r="2.5" />
-    <circle
+        android:pathData="M100,66.5 a2.5,2.5 0 1,0 0.001,0 Z" />
+    <path
         android:fillColor="#006B3C"
-        android:cx="107"
-        android:cy="69"
-        android:r="2.5" />
+        android:pathData="M107,66.5 a2.5,2.5 0 1,0 0.001,0 Z" />
 </vector>
