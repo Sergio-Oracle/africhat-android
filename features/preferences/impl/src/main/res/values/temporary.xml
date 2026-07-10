@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2026 Element Creations Ltd.
+  ~
+  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+  ~ Please see LICENSE files in the repository root for full details.
+  -->
+<resources>
+    <!-- AfriChat: override Element-branded sound names -->
+    <string name="screen_notification_settings_sound_element_default">AfriChat Default</string>
+    <string name="screen_notification_settings_sound_element_fade">AfriChat Fade</string>
+    <!-- AfriChat: rename Element Call URL setting -->
+    <string name="screen_advanced_settings_element_call_base_url">Custom AfriChat Call URL</string>
+    <string name="screen_advanced_settings_element_call_base_url_description">Set a custom base URL for AfriChat group calls.</string>
+    <string name="common_user_status_in_a_meeting">In a meeting</string>
+    <string name="common_user_status_focus_time">Focus time</string>
+    <string name="common_user_status_on_the_road">On the road</string>
+    <string name="common_user_status_be_right_back">Be right back</string>
+    <string name="common_user_status_away">Away</string>
+    <string name="common_user_status_on_a_call">On a call</string>
+    <string name="common_user_status_custom">Custom…</string>
+    <string name="screen_preferences_user_status_placeholder">What\'s your status?</string>
+    <string name="screen_preferences_user_status_custom_hint">Custom status…</string>
+</resources>

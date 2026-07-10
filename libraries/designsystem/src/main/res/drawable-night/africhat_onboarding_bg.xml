@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AfriChat onboarding background — dark theme.
+  Very dark green with subtle golden kente pattern.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="1920dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1920">
+
+    <!-- Very dark green base -->
+    <path
+        android:fillColor="#0D1B0F"
+        android:pathData="M0,0 L1080,0 L1080,1920 L0,1920 Z" />
+
+    <!-- Radial glow (deep green) -->
+    <path
+        android:fillColor="#006B3C"
+        android:pathData="M540,0 C750,0 900,200 900,380 C900,560 750,700 540,700 C330,700 180,560 180,380 C180,200 330,0 540,0 Z"
+        android:fillAlpha="0.18" />
+
+    <!-- Top stripe gold -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M0,140 L1080,140 L1080,170 L0,170 Z"
+        android:fillAlpha="0.15" />
+    <path
+        android:fillColor="#CE1126"
+        android:pathData="M0,172 L1080,172 L1080,182 L0,182 Z"
+        android:fillAlpha="0.12" />
+
+    <!-- Diamond pattern right -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M820,220 L860,260 L820,300 L780,260 Z"
+        android:fillAlpha="0.1" />
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M900,220 L940,260 L900,300 L860,260 Z"
+        android:fillAlpha="0.1" />
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M980,220 L1020,260 L980,300 L940,260 Z"
+        android:fillAlpha="0.1" />
+
+    <!-- Vertical accent bars -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M0,600 L15,600 L15,900 L0,900 Z"
+        android:fillAlpha="0.12" />
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M1065,600 L1080,600 L1080,900 L1065,900 Z"
+        android:fillAlpha="0.12" />
+
+    <!-- Cross motifs bottom -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M80,1350 L110,1350 L110,1450 L80,1450 Z"
+        android:fillAlpha="0.08" />
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M40,1380 L150,1380 L150,1420 L40,1420 Z"
+        android:fillAlpha="0.08" />
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M950,1350 L980,1350 L980,1450 L950,1450 Z"
+        android:fillAlpha="0.08" />
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M910,1380 L1020,1380 L1020,1420 L910,1420 Z"
+        android:fillAlpha="0.08" />
+
+    <!-- Bottom stripe -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="M0,1750 L1080,1750 L1080,1780 L0,1780 Z"
+        android:fillAlpha="0.15" />
+</vector>

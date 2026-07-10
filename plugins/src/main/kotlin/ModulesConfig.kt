@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2025 Element Creations Ltd.
+ * Copyright 2024, 2025 New Vector Ltd.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+ * Please see LICENSE files in the repository root for full details.
+ */
+
+import config.AnalyticsConfig
+import config.BuildTimeConfig
+import config.PushProvidersConfig
+
+object ModulesConfig {
+    val pushProvidersConfig = PushProvidersConfig(
+        includeFirebase = BuildTimeConfig.PUSH_CONFIG_INCLUDE_FIREBASE,
+        includeUnifiedPush = BuildTimeConfig.PUSH_CONFIG_INCLUDE_UNIFIED_PUSH,
+    )
+
+    // AfriChat: analytics disabled — no PostHog or Sentry telemetry sent
+    val analyticsConfig: AnalyticsConfig = run {
+        val withPosthog = !BuildTimeConfig.SERVICES_POSTHOG_APIKEY.isNullOrEmpty() &&
+            !BuildTimeConfig.SERVICES_POSTHOG_HOST.isNullOrEmpty()
+        val withSentry = !BuildTimeConfig.SERVICES_SENTRY_DSN.isNullOrEmpty()
+        if (withPosthog || withSentry) {
+            println("Analytics enabled with Posthog: $withPosthog, Sentry: $withSentry")
+            AnalyticsConfig.Enabled(withPosthog = withPosthog, withSentry = withSentry)
+        } else {
+            println("AfriChat: Analytics disabled")
+            AnalyticsConfig.Disabled
+        }
+    }
+}

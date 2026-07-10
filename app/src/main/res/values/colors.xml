@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2025 Element Creations Ltd.
+  ~ Copyright 2022 New Vector Ltd.
+  ~
+  ~ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-Element-Commercial.
+  ~ Please see LICENSE files in the repository root for full details.
+  -->
+<resources>
+    <!-- AfriChat brand colors -->
+    <color name="africhat_green">#006B3C</color>
+    <color name="africhat_green_dark">#004D2B</color>
+    <color name="africhat_gold">#FCD116</color>
+    <!-- Splash screen backgrounds -->
+    <color name="splashscreen_bg_dark">#0D1B0F</color>
+    <color name="splashscreen_bg_light">#006B3C</color>
+</resources>

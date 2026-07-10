@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AfriChat launcher foreground icon.
+  Design: Africa continent silhouette + chat bubble, white on transparent.
+  Used as foreground in adaptive icon (layered over the green background).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!--
+      Africa continent silhouette (simplified, centered at ~50,52).
+      Scaled to fit the safe zone (roughly 36x36 dp centered in the 108dp canvas).
+    -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+M54,18
+C50,18 46,20 43,23
+C40,26 39,30 37,33
+C35,36 32,38 30,41
+C28,44 27,48 27,52
+C27,57 29,61 31,65
+C33,69 35,72 37,76
+C39,80 40,84 42,87
+C44,90 47,92 50,92
+C53,92 55,90 57,87
+C59,84 59,81 62,79
+C65,77 68,75 69,72
+C71,69 70,65 70,62
+C70,59 68,57 68,54
+C68,51 70,48 68,45
+C66,42 63,41 62,38
+C61,35 62,31 60,28
+C58,25 56,22 54,18 Z
+" />
+
+    <!-- Chat bubble — bottom right overlay in gold -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="
+M72,58
+C72,55 74,53 76,53
+L90,53
+C93,53 95,55 95,58
+L95,68
+C95,71 93,73 90,73
+L80,73
+L76,78
+L76,73
+L76,73
+C74,73 72,71 72,68 Z
+" />
+
+    <!-- Three dots inside chat bubble (activity indicator) -->
+    <circle
+        android:fillColor="#006B3C"
+        android:cx="79"
+        android:cy="63"
+        android:r="2" />
+    <circle
+        android:fillColor="#006B3C"
+        android:cx="83.5"
+        android:cy="63"
+        android:r="2" />
+    <circle
+        android:fillColor="#006B3C"
+        android:cx="88"
+        android:cy="63"
+        android:r="2" />
+</vector>

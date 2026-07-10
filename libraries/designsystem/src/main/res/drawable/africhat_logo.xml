@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AfriChat brand logo:
+  - Africa continent silhouette in white
+  - Gold chat bubble overlay (bottom-right)
+  Used on dark/green backgrounds.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Africa continent (simplified, white) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="
+M60,12
+C55,12 50,14 47,18
+C44,22 43,27 40,31
+C37,35 33,38 31,42
+C29,46 28,51 28,56
+C28,62 30,67 33,72
+C36,77 39,81 42,86
+C45,91 46,96 49,100
+C52,104 55,107 59,108
+C63,109 66,107 70,104
+C74,101 75,97 79,94
+C83,91 87,87 89,83
+C91,79 90,74 90,69
+C90,64 88,60 87,56
+C86,52 88,47 86,43
+C84,39 81,36 79,32
+C77,28 78,23 75,19
+C72,15 68,12 64,12
+C62,12 61,12 60,12 Z
+" />
+
+    <!-- Chat bubble (gold) -->
+    <path
+        android:fillColor="#FCD116"
+        android:pathData="
+M85,62
+C85,59 87,57 90,57
+L110,57
+C113,57 115,59 115,62
+L115,76
+C115,79 113,81 110,81
+L95,81
+L90,87
+L90,81
+C87,81 85,79 85,76 Z
+" />
+
+    <!-- Dots inside chat bubble -->
+    <circle
+        android:fillColor="#006B3C"
+        android:cx="93"
+        android:cy="69"
+        android:r="2.5" />
+    <circle
+        android:fillColor="#006B3C"
+        android:cx="100"
+        android:cy="69"
+        android:r="2.5" />
+    <circle
+        android:fillColor="#006B3C"
+        android:cx="107"
+        android:cy="69"
+        android:r="2.5" />
+</vector>
