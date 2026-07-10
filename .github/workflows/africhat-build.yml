@@ -16,7 +16,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
+        env:
+          GIT_LFS_SKIP_SMUDGE: 1
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
