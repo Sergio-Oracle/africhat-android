@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="screen_change_server_error_element_pro_required_title">Serveur non supporté</string>
-    <string name="screen_change_server_error_element_pro_required_message">Ce serveur n\'est pas compatible avec AfriChat. Veuillez contacter votre administrateur.</string>
-    <string name="screen_change_server_error_element_pro_required_action_android">Fermer</string>
-    <string name="screen_missing_key_backup_open_element_classic">Ouvrir un autre client Matrix</string>
-    <string name="screen_missing_key_backup_step_1">Ouvrez un autre client Matrix sur votre appareil</string>
-    <string name="screen_server_confirmation_message_login_element_dot_io">Serveur privé réservé aux membres de l\'équipe RTN.</string>
 </resources>
