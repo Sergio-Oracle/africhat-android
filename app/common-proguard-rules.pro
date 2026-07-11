@@ -67,13 +67,19 @@
 -dontwarn androidx.window.sidecar.SidecarProvider
 -dontwarn androidx.window.sidecar.SidecarWindowLayoutInfo
 
-# Also needed after AGP 8.13.1 upgrade, it seems like proguard is now more aggressive on removing unused code
--keep,allowoptimization,allowshrinking class org.matrix.rustcomponents.sdk.** { *;}
--keep,allowoptimization,allowshrinking class uniffi.** { *;}
--keep,allowoptimization,allowshrinking class io.element.android.x.di.** { *; }
+# matrix-rust-sdk: JNI callbacks are invoked from native code (libmatrix_sdk_ffi.so),
+# not from Java — R8 cannot detect this and will remove them without these rules.
+# Do NOT add allowshrinking here, it would allow R8 to remove "unreachable" JNI methods.
+-keep class org.matrix.rustcomponents.** { *; }
+-keep class uniffi.** { *; }
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
 
-# Keep Metro classes
--keep,allowoptimization,allowshrinking class dev.zacsweers.metro.** { *; }
+-keep,allowoptimization class io.element.android.x.di.** { *; }
+
+# Keep Metro DI classes
+-keep,allowoptimization class dev.zacsweers.metro.** { *; }
 
 # Rustls Platform Verifier
--keep, includedescriptorclasses class org.rustls.platformverifier.** { *; }
+-keep,includedescriptorclasses class org.rustls.platformverifier.** { *; }
